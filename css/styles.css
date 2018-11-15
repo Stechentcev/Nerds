@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 49px;
+    margin-bottom: 15px;
+}
+
+.main-menu,
+.user-menu {
+    list-style: none;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+}
+
+
+
+.main-menu a,
+.user-menu a {
+    color: #000000;
+}
+
+.main-menu a:hover,
+.user-menu a:hover {
+    color: #fb565a;
+}
+
+.main-menu a:active,
+.user-menu a:active {
+    color: #d1d1d1;
+}
+
+.slider {
+    width: 1160px;
+    height: 415px;
+    margin: 0 auto;
+}
+.first-slide {
+    background-image: url("/img/slide1.png");
+}
+
+.second-slide {
+    background-image: url("/img/slide2.png");
+    display: none;
+}
+
+.third-slide {
+    background-image: url("/img/slide3.png");
+    display: none;
+}
+
+.slide-lead {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.button {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #fb565a;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+.slide-button:hover {
+    background-color: #e74246;
+}
+
+.slide-button:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
+.services {
+    width: 1160px;
+    height: 513px;
+    margin: 0 auto;
+}
+
+.services-list {
+    list-style: none;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-list h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.web {
+    background-image: url("/img/illustration-1.png");
+    background-repeat: no-repeat;
+
+}
+
+.app {
+    background-image: url("/img/illustration-2.png");
+    background-repeat: no-repeat;
+}
+
+.presentations {
+    background-image: url("/img/illustration-3.png");
+    background-repeat: no-repeat;
+}
+
+.app .button {
+    background-color: #00ca74;
+}
+
+.presentations .button {
+    background-color: #efc84a;
+}
+
+.web .button:hover {
+    background-color: #e74246;
+}
+
+.web .button:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
+.app .button:hover {
+    background-color: #00bc6c;
+}
+
+.app .button:focus {
+    background-color: #00aa62;
+    color: #15b16f;
+}
+
+.presentations .button:hover {
+    background-color: #eab534;
+}
+
+.presentations .button:focus {
+    background-color: #eab534;
+    color: #edc265;
+}
+
+.features {
+    width: 1160px;
+    height: 527px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-lead {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.orders {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.orders-list {
+    list-style: none;
+}
+
+.features-right p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.features-right th {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.features-right td {
+    line-height: 18px;
+}
+
+.clients {
+    width: 1160px;
+    height: 184px;
+    margin: 0 auto;
+}
+
+.clients-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.contacts {
+    position: relative;
+    height: 416px;
+    margin-bottom: 69px;
+}
+
+.contacts-head {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.contact-cover {
+    height: 308px;
+    width: 319px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 54px;
+    left: 140px;
+    z-index: 33;
+}
+
+.marker {
+    position: absolute;
+    top: 89px;
+    right: 465px;
+    z-index: 34;
+}
+
+.contacts p {
+    line-height: 18px;
+    color: #666666;
+}
+
+.main-footer {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-lead {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 22px;
+}
+
+.social-net {
+    background-color: #e1e1e1;
+}
+
+.social-net:hover {
+    background-color: #e74246;
+}
+
+.contact-pop-up h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.callback-item label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.callback input[type="text"] {
+    border: 1px solid #d7dcde;
+    border-radius: 2px;
+}
+
+.callback input[type="text"]:hover {
+    border-color: #b4b9bb;
+}
+
+.callback input[type="text"]:focus {
+    border-color: #000000;
+}
+
+.callback input[type="text"]:hover {
+    border-color: #b4b9bb;
+}
+
+.callback input[type="text"]:invalid {
+    border-color: #e74246;
+}
+
+.item-cover .button:hover {
+    background-color: #e74246;
+}
+
+.item-cover .button:active {
+     background-color: #d7373b;
+ }
+
+.show-result {
+     color: #828282;
+     background-color: #eeeeee;
+}
+
+.show-result:hover {
+    color: #0f0f0f;
+    background-color: #dfdfdf;
+}
+
+.show-result:active {
+    color: #959595;
+    background-color: #d5d5d5;
+}
+
+.pagination-item {
+    color: #828282;
+    background-color: #eeeeee;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+
+}
+
+.pagination-item:hover {
+    color: #0f0f0f;
+    background-color: #dfdfdf;
+}
+
+.pagination-item:active {
+    color: #959595;
+    background-color: #d5d5d5;
+}

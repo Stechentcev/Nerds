@@ -20,6 +20,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 .main-nav {
     font-weight: 500;
     font-size: 16px;
@@ -32,7 +40,6 @@ a {
     width: 1160px;
     margin: 0 auto;
     padding-top: 49px;
-    margin-bottom: 15px;
 }
 
 .main-menu,
@@ -66,11 +73,14 @@ a {
 
 .slider {
     width: 1160px;
-    height: 415px;
     margin: 0 auto;
+
 }
 .first-slide {
-    background-image: url("/img/slide1.png");
+    background-image: url("../img/slide1.png");
+    background-repeat: no-repeat;
+    background-position: 93% 18px;
+    padding: 78px 0 80px 0;
 }
 
 .second-slide {
@@ -88,9 +98,15 @@ a {
     font-size: 55px;
     line-height: 55px;
     color: #000000;
+    margin-bottom: 30px;
+}
+
+.slide-text {
+    margin-bottom: 45px;
 }
 
 .button {
+    display: inline-block;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 16px;
@@ -98,8 +114,13 @@ a {
     color: #ffffff;
     background-color: #fb565a;
     text-align: center;
-    vertical-align: middle;
     border: none;
+    border-radius: 3px;
+}
+
+.slide-button {
+    width: 240px;
+    padding: 13px 0;
 }
 
 .slide-button:hover {
@@ -113,39 +134,67 @@ a {
 
 .services {
     width: 1160px;
-    height: 513px;
     margin: 0 auto;
+    border-bottom: 3px solid #eeeeee;
+    margin-bottom: 40px;
 }
 
 .services-list {
     list-style: none;
     display:  flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 255px 0 80px 0;
 }
 
-.services-list h3{
+.services-list li {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.services-list h3 {
+    position: relative;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: #000000;
+    padding: 0;
+    margin: 0;
 }
 
-.web {
-    background-image: url("/img/illustration-1.png");
-    background-repeat: no-repeat;
-
+.services-list h3::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/illustration-1.png");
+    top: -176px;
 }
 
-.app {
-    background-image: url("/img/illustration-2.png");
-    background-repeat: no-repeat;
+.services-list .app h3::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/illustration-2.png");
+    top: -176px;
 }
 
-.presentations {
-    background-image: url("/img/illustration-3.png");
-    background-repeat: no-repeat;
+.services-list .presentations h3::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/illustration-3.png");
+    top: -176px;
+}
+
+.services-list p {
+    margin: 28px 0 40px 0;
+}
+
+.services button {
+    width: 160px;
+    padding: 13px 0;
 }
 
 .app .button {
@@ -185,11 +234,21 @@ a {
 
 .features {
     width: 1160px;
-    height: 527px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding-bottom: 77px;
+    border-bottom: 3px solid #eeeeee;
+}
+
+.features-left {
+    padding-top: 40px;
+    width: 660px;
+    margin-right: 140px;
+}
+
+.features-right {
+    width: 360px;
 }
 
 .features-lead {
@@ -199,16 +258,27 @@ a {
     color: #000000;
 }
 
+.features-text {
+    margin-top: 35px;
+    margin-bottom: 47px;
+}
+
 .orders {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    margin-bottom: 35px;
 }
 
 .orders-list {
     list-style: none;
+}
+
+.orders-list li:nth-child(1),
+.orders-list li:nth-child(2) {
+    margin-bottom: 35px;
 }
 
 .features-right p {
@@ -217,35 +287,46 @@ a {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    margin-top: 41px;
+    margin-bottom: 52px;
+    text-align: center;
 }
 
 .features-right th {
     font-size: 45px;
     color: #000000;
     font-weight: 700;
+    text-align: left;
 }
 
 .features-right td {
     line-height: 18px;
+    padding-top: 27px;
 }
 
 .clients {
     width: 1160px;
-    height: 184px;
     margin: 0 auto;
+    padding-top: 46px;
+    padding-bottom: 48px;
+    border-bottom: 3px solid #eeeeee;
 }
 
 .clients-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
 .contacts {
     position: relative;
-    height: 416px;
-    margin-bottom: 69px;
+    padding-top: 80px;
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
 }
 
 .contacts-head {
@@ -256,19 +337,22 @@ a {
 }
 
 .contact-cover {
-    height: 308px;
-    width: 319px;
+    height: 255px;
+    width: 269px;
     background-color: #ffffff;
     position: absolute;
-    top: 54px;
+    top: 134px;
     left: 140px;
     z-index: 33;
+    padding-top: 53px;
+    padding-left: 50px;
+
 }
 
 .marker {
     position: absolute;
-    top: 89px;
-    right: 465px;
+    top: 169px;
+    left: 820px;
     z-index: 34;
 }
 
@@ -277,13 +361,31 @@ a {
     color: #666666;
 }
 
+.contacts button {
+    width: 220px;
+    padding: 13px 0;
+}
+
+.contacts p:nth-child(2) {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.contacts p:nth-child(3) {
+    margin-bottom: 40px;
+}
+
 .main-footer {
     width: 1160px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    margin-bottom: 70px;
+}
+
+.footer-icons {
+    width: 260px;
+    margin-right: 140px;
 }
 
 .footer-lead {
@@ -291,6 +393,7 @@ a {
     line-height: 36px;
     font-weight: bold;
     color: #000000;
+    margin-bottom: 10px;
 }
 
 .footer-text {
@@ -300,6 +403,30 @@ a {
 
 .social-net {
     background-color: #e1e1e1;
+    display: inline-block;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.footer-icons a:nth-child(1) {
+    background-image: url("../img/svg-nerds/vk-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.footer-icons a:nth-child(2) {
+    background-image: url("../img/svg-nerds/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.footer-icons a:nth-child(3) {
+    background-image: url("../img/svg-nerds/insta-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .social-net:hover {
